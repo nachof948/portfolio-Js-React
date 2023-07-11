@@ -1,0 +1,61 @@
+import { Box, Flex,Text, useMediaQuery } from '@chakra-ui/react';
+import { CardBlack, Cardbranding} from '../../index'
+import React from 'react';
+
+const Misservicios = () => {
+    const [agrandarAncho] = useMediaQuery('(max-width:1023px)')
+    const sectionServicio = {
+        width:'100vw',
+        display:'flex',
+        justifyContent:'center',
+        flexDirection:'column',
+        alignItems:'center',
+        py:'60px'
+    }
+    const servicioContenedor ={
+        width: agrandarAncho ? '95vw' :'80vw',
+        margin:'0 auto',
+        gap:'60px',
+        justifyContent:'center',
+        alignItems:'center',
+        flexDirection:'column'
+    }
+    const tituloServicios ={
+        color:'#FFFFFF',
+        fontSize:"30",
+        fontWeight: 700,
+        position:'relative',
+        alignSelf:'start',
+        "&::before": {
+            content: '""',
+            position: "absolute",
+            top: '3rem',
+            left: "0",
+            width: "25px",
+            height: "4px",
+            backgroundColor: "#F26C4F",
+        },
+    }
+    return(
+        <Box as='section' id='mis-servicios' sx={sectionServicio} >
+            <Flex sx={servicioContenedor}>
+                <Text as={'h2'} sx={tituloServicios} >Mis Servicios</Text>
+                    <Flex gap={{lg:'1.5rem', sm:'3rem'}} flexWrap={{lg:'nowrap', sm:'wrap'}} justifyContent={'center'}>
+                        <CardBlack 
+                        imagen={'../../../public/Misservicios-img/card-ux.svg'} 
+                        imagenHover={'../../../public/Misservicios-img/card-ux-blanco.svg'}
+                        servicio={'Diseño UX/UI'}
+                        explicacion={'Me centro en crear experiencias digitales atractivas y funcionales para los usuarios. A través de la investigación de usuarios y el análisis de sus necesidades, diseño interfaces intuitivas que facilitan la interacción.'}/>
+                        <Cardbranding/>
+                        <CardBlack 
+                        imagen={'../../../public/Misservicios-img/card-web.svg'} 
+                        imagenHover={'../../../public/Misservicios-img/card-web-blanco.svg'}
+                        servicio={'Desarrollo Web'}
+                        explicacion={'Me enfoco en la creación y desarrollo de sitios web funcionales y atractivos. Utilizando HTML, CSS, JavaScript y React. Traduzco diseños y conceptos en código para construir interfaces interactivas y receptivas.'}/>
+                    </Flex>
+            </Flex>
+        </Box>
+    )
+}
+
+export { Misservicios }
