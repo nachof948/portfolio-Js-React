@@ -25,19 +25,19 @@ const Miportfolio = () => {
             <Text as={'h2'} sx={tituloPortfolio}>Mi Portfolio</Text>
                 <Flex justifyContent={'center'} alignItems={'center'} gap={'1rem'} flexWrap={'wrap'}>
                     <Portfolio 
-                    imagen={'../../../src/assets/Miportfolio-img/Portfolio-1.png'} 
+                    imagen={'../../../src/assets/Portfolio-1.png'} 
                     link={'https://nachof948.github.io/Trabajo-Practico-1/'} 
                     titulo={'Aplicaciones Web'} />
                     <Portfolio 
-                    imagen={'../../../src/assets/Miportfolio-img/Portfolio-2.png'} 
+                    imagen={'../../../src/assets/Portfolio-2.png'} 
                     link={'https://nachof948.github.io/Trabajo-Practico-2/'} 
                     titulo={'Diseño UX/UI'} />
                     <Portfolio 
-                    imagen={'../../../src/assets/Miportfolio-img/Portfolio-3.png'} 
+                    imagen={'../../../src/assets/Portfolio-3.png'} 
                     link={'https://nachof948.github.io/Huddle-landing-page-with-a-single-introductory-section/'} 
                     titulo={'Diseño de Marca'} />
                     <Portfolio 
-                    imagen={'../../../src/assets/Miportfolio-img/Portfolio-4.png'} 
+                    imagen={'../../../src/assets/Portfolio-4.png'} 
                     link={'https://nachof948.github.io/Trabajo-Practico-3/'} 
                     titulo={'Desarrollo Web'} />
                 </Flex>
