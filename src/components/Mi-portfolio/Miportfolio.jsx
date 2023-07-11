@@ -1,6 +1,10 @@
 import React from 'react';
 import { Box, Flex, Text } from '@chakra-ui/react';
 import { Portfolio, Slide } from '../../index';
+import portfolioImg1 from '../../../src/assets/Miportfolio-img/Portfolio-1.png';
+import portfolioImg2 from '../../../src/assets/Miportfolio-img/Portfolio-2.png';
+import portfolioImg3 from '../../../src/assets/Miportfolio-img/Portfolio-3.png';
+import portfolioImg4 from '../../../src/assets/Miportfolio-img/Portfolio-4.png';
 
 const Miportfolio = () => {
     const tituloPortfolio ={
@@ -25,19 +29,19 @@ const Miportfolio = () => {
             <Text as={'h2'} sx={tituloPortfolio}>Mi Portfolio</Text>
                 <Flex justifyContent={'center'} alignItems={'center'} gap={'1rem'} flexWrap={'wrap'}>
                     <Portfolio 
-                    imagen={'../../../src/assets/Portfolio-1.png'} 
+                    imagen={portfolioImg1} 
                     link={'https://nachof948.github.io/Trabajo-Practico-1/'} 
                     titulo={'Aplicaciones Web'} />
                     <Portfolio 
-                    imagen={'../../../src/assets/Portfolio-2.png'} 
+                    imagen={portfolioImg2} 
                     link={'https://nachof948.github.io/Trabajo-Practico-2/'} 
                     titulo={'Diseño UX/UI'} />
                     <Portfolio 
-                    imagen={'../../../src/assets/Portfolio-3.png'} 
+                    imagen={portfolioImg3} 
                     link={'https://nachof948.github.io/Huddle-landing-page-with-a-single-introductory-section/'} 
                     titulo={'Diseño de Marca'} />
                     <Portfolio 
-                    imagen={'../../../src/assets/Portfolio-4.png'} 
+                    imagen={portfolioImg4} 
                     link={'https://nachof948.github.io/Trabajo-Practico-3/'} 
                     titulo={'Desarrollo Web'} />
                 </Flex>

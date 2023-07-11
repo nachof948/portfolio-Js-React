@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Image,Text, Flex,Link} from '@chakra-ui/react';
 
+
+
 const Portfolio = ({imagen, link, titulo}) => {
     const imgPortfolio ={
         borderRadius:10
