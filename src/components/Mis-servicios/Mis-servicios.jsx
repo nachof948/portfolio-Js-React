@@ -1,6 +1,11 @@
 import { Box, Flex,Text, useMediaQuery } from '@chakra-ui/react';
 import { CardBlack, Cardbranding} from '../../index'
 import React from 'react';
+import cardUxImage from '../../../src/assets/Misservicios-img/card-ux.svg';
+import cardUxHoverImage from '../../../src/assets/Misservicios-img/card-ux-blanco.svg';
+import cardWebImage from '../../../src/assets/Misservicios-img/card-web.svg';
+import cardWebHoverImage from '../../../src/assets/Misservicios-img/card-web-blanco.svg';
+
 
 const Misservicios = () => {
     const [agrandarAncho] = useMediaQuery('(max-width:1023px)')
@@ -42,14 +47,14 @@ const Misservicios = () => {
                 <Text as={'h2'} sx={tituloServicios} >Mis Servicios</Text>
                     <Flex gap={{lg:'1.5rem', sm:'3rem'}} flexWrap={{lg:'nowrap', sm:'wrap'}} justifyContent={'center'}>
                         <CardBlack 
-                        imagen={'../../../src/assets/Misservicios-img/card-ux.svg'} 
-                        imagenHover={'../../../src/assets/Misservicios-img/card-ux-blanco.svg'}
+                        imagen={cardUxImage} 
+                        imagenHover={cardUxHoverImage}
                         servicio={'Diseño UX/UI'}
                         explicacion={'Me centro en crear experiencias digitales atractivas y funcionales para los usuarios. A través de la investigación de usuarios y el análisis de sus necesidades, diseño interfaces intuitivas que facilitan la interacción.'}/>
                         <Cardbranding/>
                         <CardBlack 
-                        imagen={'../../../src/assets/Misservicios-img/card-web.svg'} 
-                        imagenHover={'../../../src/assets/Misservicios-img/card-web-blanco.svg'}
+                        imagen={cardWebImage} 
+                        imagenHover={cardWebHoverImage}
                         servicio={'Desarrollo Web'}
                         explicacion={'Me enfoco en la creación y desarrollo de sitios web funcionales y atractivos. Utilizando HTML, CSS, JavaScript y React. Traduzco diseños y conceptos en código para construir interfaces interactivas y receptivas.'}/>
                     </Flex>
