@@ -1,5 +1,5 @@
 import React from 'react';
-import Imagensobremi from '../../../public/Sobremi-img/Imagen Sobre-Mi.png'
+import Imagensobremi from '../../assets/Sobremi-img/Imagen Sobre-Mi.png'
 import { Image } from '@chakra-ui/react';
 const Imgsobremi = () => {
     const Sobremiimagen={

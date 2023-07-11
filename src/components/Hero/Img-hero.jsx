@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImagen from '../../../public/Hero-img/Img-Hero.png'
+import HeroImagen from '../../assets/Hero-img/Img-Hero.png'
 import { Image} from '@chakra-ui/react';
 const Imghero = () => {
 
