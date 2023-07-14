@@ -1,6 +1,32 @@
-import React from 'react';
-import { FormControl, Input,Textarea, Button} from '@chakra-ui/react';
+import React, { useState } from 'react';
+import { FormControl, Input,Textarea, Button, Text} from '@chakra-ui/react';
+import { useForm } from 'react-hook-form';
 const Formulario = () => {
+    const {register,formState:{errors}, handleSubmit, reset} = useForm()
+    const [enviado, setEnviado] = useState(false);
+    
+    const enviar = async (data) => {
+    try {
+        const response = await fetch('https://formspree.io/f/xpzgzeoe', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+        setEnviado(true)
+        reset()
+    } else {
+        console.error('Error al enviar el correo electrónico');
+    }
+    } catch (error) {
+    console.error('Error al enviar el correo electrónico:', error);   
+    }
+};
+
+
     const formularioEstilo={
         display:'flex', 
         flexDirection:'column',
@@ -53,15 +79,50 @@ const Formulario = () => {
     }
     return(
         <>
-        <FormControl isRequired sx={formularioEstilo} 
+
+            <FormControl as={'form'} action="https://formspree.io/f/xpzgzeoe" method="POST" sx={formularioEstilo} onSubmit={handleSubmit(enviar)}
         order={{lg:'2', sm:'1'}} 
         flexBasis={{xl1:'90%', lg:'80%',md:'80%', sm:'100%'}} 
         p={{xl: '2rem 2.4rem', lg:'1.4rem 1rem', sm:'1.4rem 1rem'}}>
-            <Input sx={inputEstilo} focusBorderColor='white' placeholder='Tu Nombre' required/>
-            <Input sx={inputEstilo} focusBorderColor='white' placeholder='Tu Correo Electronico' required/>
-            <Textarea sx={textareaEstilo} focusBorderColor='white'  height={{md:'13rem', sm:'10rem'}} placeholder="Mensaje..." required />
-            <Button sx={btnFormulario} type='submit'>Enviar</Button>
+
+                <Input type='text' 
+                {...register('nombre',{required:true})} 
+                sx={inputEstilo} 
+                id="nombre"
+                name="nombre"
+                focusBorderColor='white' 
+                placeholder='Tu Nombre' />
+                {errors.nombre?.type === 'required' && <Text color={'white'} fontWeight={'500'}>El campo nombre es requerido</Text>}
+
+
+                <Input 
+                {...register('email', { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i  })}
+                sx={inputEstilo} 
+                id="email"
+                type="email" 
+                name="email"
+                focusBorderColor='white' 
+                placeholder='Tu Correo Electronico'  />
+                {errors.email?.type === 'required' && <Text color={'white'} fontWeight={'500'}>El campo email es requerido</Text>}
+                {errors.email?.type === 'pattern' && <Text color="black" fontWeight="500">El correo electrónico no es válido</Text>}
+            
+                <Textarea sx={textareaEstilo} 
+                {...register('mensaje', {required:true})} 
+                id="mensaje"
+                name="mensaje"
+                focusBorderColor='white'  
+                height={{md:'13rem', sm:'10rem'}} 
+                placeholder="Mensaje..."   />
+                {errors.mensaje?.type === 'required' && <Text color={'white'} fontWeight={'500'}>El campo mensaje es requerido</Text>}
+            
+                {enviado && 
+                <Text color={'white'} fontWeight={'500'} fontSize={'1.1rem'} >
+                    Tus datos se han enviado correctamente!
+                </Text>}
+            
+                <Button sx={btnFormulario} type='submit'>Enviar</Button>
         </FormControl>
+        
         </>
     )
 }

@@ -1,4 +1,4 @@
-import { Box, Flex, Link, Text } from '@chakra-ui/react';
+import { Box, Flex} from '@chakra-ui/react';
 import {TextoContacto, Formulario} from '../../index'
 import React from 'react';
 const Contacto = () => {
