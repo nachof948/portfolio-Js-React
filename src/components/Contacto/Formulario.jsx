@@ -116,7 +116,7 @@ const Formulario = () => {
                 {errors.mensaje?.type === 'required' && <Text color={'white'} fontWeight={'500'}>El campo mensaje es requerido</Text>}
             
                 {enviado && 
-                <Text color={'white'} fontWeight={'500'} fontSize={'1.1rem'} >
+                <Text color={'white'} fontWeight={'500'} fontSize={{sm3:'1.1rem', sm:'0.9rem'}} >
                     Tus datos se han enviado correctamente!
                 </Text>}
             
