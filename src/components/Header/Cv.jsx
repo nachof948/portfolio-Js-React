@@ -5,12 +5,11 @@ const Cv = ({ section }) => {
   const [reducirBtnCv] = useMediaQuery("(max-width: 1120px)");
   const [desaparecerBtnCv] = useMediaQuery("(max-width: 1023px)");
 
-
   const cvBtn = {
     color: '#FFFFFF',
     bg: '#F26C4F',
     border: '1px solid #F26C4F',
-    borderRadius:'5px',
+    borderRadius: '5px',
     fontWeight: '400',
     p: reducirBtnCv ? '0.8rem 1.8rem' : '1rem 2.2rem',
     display: section === 'header' && desaparecerBtnCv ? 'none' : 'flex',
@@ -23,7 +22,11 @@ const Cv = ({ section }) => {
 
   return (
     <>
-      <Link sx={cvBtn} href="https://drive.google.com/file/d/1iiLd_s3x0mEP2FfrhzxO4NFLKlfHysII/view?usp=sharin" target='_blank'>
+      <Link
+        sx={cvBtn}
+        href="https://drive.google.com/uc?export=download&id=1iiLd_s3x0mEP2FfrhzxO4NFLKlfHysII"
+        download="CV-Ignacio Fernandez.pdf"
+      >
         Descargar CV
       </Link>
     </>
