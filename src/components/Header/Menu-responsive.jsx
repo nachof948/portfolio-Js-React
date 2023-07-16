@@ -55,6 +55,8 @@ const enlacesMenu = {
         color:'#FFFFFF',
         bg:'#F26C4F',
         border:'1px solid #F26C4F',
+        borderRadius: '5px',
+        p: '0.6rem 1.6rem',
         fontWeight:'400',
         letterSpacing:'1px',
         _hover: {
@@ -79,7 +81,9 @@ return (
                 <Link sx={enlacesResponsive} href="#portfolio" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Portfolio
                 </Link>
-                <Button sx={cvBtn} onClick={downloadCV} >Descargar Cv</Button>
+                <Link sx={cvBtn} href="https://drive.google.com/uc?export=download&id=1iiLd_s3x0mEP2FfrhzxO4NFLKlfHysII"download="CV-Ignacio Fernandez.pdf">
+                    Descargar CV
+                </Link>
             </Box>
         </Box>
     )}
