@@ -9,7 +9,7 @@ const Cv = ({ section }) => {
 
     const downloadCV = () => {
         const link = document.createElement('a')
-        link.href = '/public/CV-Ignacio Fernandez.pdf' 
+        link.href = 'public/CV-Ignacio Fernandez.pdf' 
         link.download = 'CV-Ignacio Fernandez.pdf '
         link.click()
     };
