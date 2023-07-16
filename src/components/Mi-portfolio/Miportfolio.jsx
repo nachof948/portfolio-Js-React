@@ -117,7 +117,7 @@ const Miportfolio = () => {
 
   return (
     <Box as={'section'} width={'100vw'} py={70} id='portfolio' >
-      <Flex width={{ lg: '80vw', sm: '95vw' }} margin={'0 auto'} flexDirection={'column'} gap='60px' py={'35px'}>
+      <Flex width={{ lg: '80vw', sm: '90vw' }} margin={'0 auto'} flexDirection={'column'} gap='60px' py={'35px'}>
         <Text as={'h2'} sx={tituloPortfolio}>Mi Portfolio</Text>
         <Flex justifyContent={'center'} alignItems={'center'} gap={'1rem'} flexWrap={'wrap'} >
           {renderPortfolio()}

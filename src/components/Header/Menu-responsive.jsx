@@ -5,12 +5,6 @@ import { Box,Link, useMediaQuery, Button } from '@chakra-ui/react';
 const Menuresponsive = ({ menuDesplegado, onClick }) => {
 const [mostrarMenuResponsive] = useMediaQuery('(max-width: 1023px)')
 
-const downloadCV = () => {
-    const link = document.createElement('a')
-    link.href = '../../../public/CV-Ignacio Fernandez.pdf' 
-    link.download = 'CV-Ignacio Fernandez.pdf '
-    link.click()
-};
 const menuResponsiveEstilo = {
     color: '#F26C4F',
     fontSize: '3.5rem',
@@ -59,6 +53,7 @@ const enlacesMenu = {
         p: '0.6rem 1.6rem',
         fontWeight:'400',
         letterSpacing:'1px',
+        whiteSpace:"nowrap",
         _hover: {
             bg:'transparent',
             color:'#F26C4F'
@@ -81,7 +76,9 @@ return (
                 <Link sx={enlacesResponsive} href="#portfolio" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Portfolio
                 </Link>
-                <Link sx={cvBtn} href="https://drive.google.com/uc?export=download&id=1iiLd_s3x0mEP2FfrhzxO4NFLKlfHysII"download="CV-Ignacio Fernandez.pdf">
+                <Link sx={cvBtn} 
+                href="https://drive.google.com/uc?export=download&id=1iiLd_s3x0mEP2FfrhzxO4NFLKlfHysII"
+                download="CV-Ignacio Fernandez.pdf">
                     Descargar CV
                 </Link>
             </Box>

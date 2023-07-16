@@ -8,7 +8,6 @@ import cardWebHoverImage from '../../../src/assets/Misservicios-img/card-web-bla
 
 
 const Misservicios = () => {
-    const [agrandarAncho] = useMediaQuery('(max-width:1023px)')
     const sectionServicio = {
         width:'100vw',
         display:'flex',
@@ -18,7 +17,6 @@ const Misservicios = () => {
         py:'60px'
     }
     const servicioContenedor ={
-        width: agrandarAncho ? '95vw' :'80vw',
         margin:'0 auto',
         gap:'60px',
         justifyContent:'center',
@@ -43,7 +41,7 @@ const Misservicios = () => {
     }
     return(
         <Box as='section' id='mis-servicios' sx={sectionServicio} >
-            <Flex sx={servicioContenedor}>
+            <Flex sx={servicioContenedor} width={{ lg: '80vw', sm: '90vw' }}>
                 <Text as={'h2'} sx={tituloServicios} >Mis Servicios</Text>
                     <Flex gap={{lg:'1.5rem', sm:'3rem'}} flexWrap={{lg:'nowrap', sm:'wrap'}} justifyContent={'center'}>
                         <CardBlack 

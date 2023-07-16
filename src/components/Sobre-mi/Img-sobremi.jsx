@@ -8,7 +8,7 @@ const Imgsobremi = () => {
     }
     return(
         <>
-            <Image sx={Sobremiimagen} src={Imagensobremi} width={{xl: '25rem', lg:'22rem', sm3:'25rem', sm:'20rem'}} alt="Ignacio Fernandez" />
+            <Image sx={Sobremiimagen} src={Imagensobremi} width={{xl: '25rem', lg:'22rem', sm3:'25rem', sm1:'19rem', sm:'15rem'}} alt="Ignacio Fernandez" />
         </>
     )
 }

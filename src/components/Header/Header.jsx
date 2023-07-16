@@ -22,7 +22,6 @@ const Header = () => {
     zIndex: 9,
   };
   const headerContenido = {
-    width: agrandarAncho ? '95vw' : '80vw',
     bg: '#222222',
     color: 'white',
     alignItems: 'start',
@@ -34,7 +33,7 @@ const Header = () => {
 
   return (
     <Box as="header" sx={header}>
-      <Flex sx={headerContenido}>
+      <Flex sx={headerContenido} width={{ lg: '80vw', sm: '90vw' }}>
         <Flex sx={headerNav} gap={{ xl: '5.9rem', lg: '3.5rem' }}>
           <Logo />
           {agrandarAncho && !menuDesplegado ? null : <Navbar />}
