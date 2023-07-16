@@ -8,11 +8,12 @@ const Cv = ({ section }) => {
 
 
     const downloadCV = () => {
-        const link = document.createElement('a')
-        link.href = '../../../src/assets/CV-Ignacio Fernandez.pdf' 
-        link.download = 'CV-Ignacio Fernandez.pdf'
-        link.click()
+        const link = document.createElement('a');
+        link.href = '/assets/CV-Ignacio%20Fernandez.pdf'; 
+        link.download = 'CV-Ignacio Fernandez.pdf';
+        link.click();
     };
+    
     const cvBtn={
         color:'#FFFFFF',
         bg:'#F26C4F',
