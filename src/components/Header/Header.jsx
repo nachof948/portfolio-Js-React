@@ -4,7 +4,7 @@ import { Box, Flex, useMediaQuery } from '@chakra-ui/react';
 import { Menuresponsive } from './Menu-responsive';
 
 const Header = () => {
-  const [agrandarAncho] = useMediaQuery('(max-width:1023px)');
+  const [agrandarAncho] = useMediaQuery({ query: '(max-width: 1023px)' });
   const [menuDesplegado, setMenuDesplegado] = useState(false);
 
   const handleMenuClick = () => {

@@ -82,7 +82,7 @@ const Formulario = () => {
 
             <FormControl as={'form'} action="https://formspree.io/f/xpzgzeoe" method="POST" sx={formularioEstilo} onSubmit={handleSubmit(enviar)}
         order={{lg:'2', sm:'1'}} 
-        flexBasis={{xl1:'90%', lg:'80%',md:'80%', sm:'100%'}} 
+        flexBasis={{xl1:'90%', lg:'80%',md:'80%', sm:'90%'}} 
         p={{xl: '2rem 2.4rem', lg:'1.4rem 1rem', sm:'1.4rem 1rem'}}>
 
                 <Input type='text' 
