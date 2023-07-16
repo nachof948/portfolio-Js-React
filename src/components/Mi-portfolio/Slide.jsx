@@ -35,7 +35,6 @@ const Slide = ({ currentSlide, totalSlides, onSlideChange }) => {
           }}
           opacity={currentSlide === i ? 1 : 0.5}
           onClick={() => handleSlideClick(i)}
-          tabIndex={0}
           onFocus={() => handleSlideClick(i)}
         ></Box>
       );
