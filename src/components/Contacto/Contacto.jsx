@@ -4,7 +4,7 @@ import React from 'react';
 const Contacto = () => {
     return(
         <Box as='section' bg={'#F26C4F'} width={'100vw'} id='contacto' > 
-            <Flex width={{lg:'80vw', sm:'92vw'}} 
+            <Flex width={{lg:'80vw', sm:'90vw'}} 
             margin={'0 auto'} 
             py={'5rem'} 
             gap={{lg:'1rem'}} 
