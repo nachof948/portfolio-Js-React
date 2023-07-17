@@ -15,42 +15,45 @@ const Navbar = () => {
     gap: separacionEnlaces ? '3.5rem' : '6.5rem',
   };
 
-  const enlacesNav = {
-    position: "relative",
-    textDecoration: "none",
-    display: ocultarNav ? 'none' : 'flex',
+// Resto del código...
+const enlacesNav = {
+  position: "relative",
+  textDecoration: "none",
+  display: ocultarNav ? 'none' : 'flex',
+  "&::before": {
+    content: '""',
+    position: "absolute",
+    bottom: 0,
+    left: "0",
+    width: "0%",
+    height: "3px",
+    backgroundColor: "#F26C4F",
+    transition: "width 250ms"
+  },
+  _hover: {
     "&::before": {
-      content: '""',
-      position: "absolute",
-      bottom: 0,
-      left: "0",
-      width: "0%",
-      height: "3px",
-      backgroundColor: "#F26C4F",
-      transition: "width 250ms"
-    },
-    _hover: {
-      "&::before": {
-        width: "50%",
-      },
-    },
-  };
-
-  const enlaceActivo = {
-    position: "relative",
-    textDecoration: "none",
-    display: ocultarNav ? 'none' : 'flex',
-    "&::before": {
-      content: '""',
-      position: "absolute",
-      bottom: 0,
-      left: "0",
       width: "50%",
-      height: "3px",
-      backgroundColor: "#F26C4F",
-      transition: "width 250ms"
     },
-  };
+  },
+};
+
+const enlaceActivo = {
+  position: "relative",
+  textDecoration: "none",
+  display: ocultarNav ? 'none' : 'flex',
+  "&::before": {
+    content: '""',
+    position: "absolute",
+    bottom: 0,
+    left: "0",
+    width: "50%",
+    height: "3px",
+    backgroundColor: "#F26C4F",
+    transition: "width 250ms"
+  },
+  _hover: {}, 
+};
+
 
   return (
     <Box as="nav" sx={navEstilo}>

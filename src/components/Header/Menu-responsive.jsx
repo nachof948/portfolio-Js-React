@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box,Link, useMediaQuery, Button } from '@chakra-ui/react';
+import { Box,Link, useMediaQuery } from '@chakra-ui/react';
 
 
 const Menuresponsive = ({ menuDesplegado, onClick }) => {
@@ -59,24 +59,27 @@ const enlacesMenu = {
             color:'#F26C4F'
         },
     }
+    const handleLinkClick = () => {
+        onClick();
+      };
 return (
     <>
     {menuDesplegado && (
         <Box sx={menuResponsive}display={mostrarMenuResponsive ? 'block' : 'none'}>
             <Box sx={enlacesMenu}>
-                <Link sx={enlacesResponsive} href="#" display="block" mb="1rem" fontSize={'1.3rem'}>
+                <Link sx={enlacesResponsive} onClick={handleLinkClick} href="#" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Inicio
                 </Link>
-                <Link sx={enlacesResponsive} href="#sobre-mi" display="block" mb="1rem" fontSize={'1.3rem'}>
+                <Link sx={enlacesResponsive} onClick={handleLinkClick} href="#sobre-mi" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Acerca
                 </Link>
-                <Link sx={enlacesResponsive} href="#mis-servicios" display="block" mb="1rem" fontSize={'1.3rem'}>
+                <Link sx={enlacesResponsive} onClick={handleLinkClick} href="#mis-servicios" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Servicios
                 </Link>
-                <Link sx={enlacesResponsive} href="#portfolio" display="block" mb="1rem" fontSize={'1.3rem'}>
+                <Link sx={enlacesResponsive} onClick={handleLinkClick} href="#portfolio" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Portfolio
                 </Link>
-                <Link sx={cvBtn} 
+                <Link sx={cvBtn} onClick={handleLinkClick}
                 href="https://drive.google.com/uc?export=download&id=1iiLd_s3x0mEP2FfrhzxO4NFLKlfHysII"
                 download="CV-Ignacio Fernandez.pdf">
                     Descargar CV
