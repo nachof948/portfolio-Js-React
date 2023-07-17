@@ -51,7 +51,7 @@ const Header = () => {
       <Flex sx={headerContenido} width={{ lg: '80vw', sm: '90vw' }}>
         <Flex sx={headerNav} gap={{ xl: '5.9rem', lg: '3.5rem' }}>
           <Logo />
-          {agrandarAncho && !menuDesplegado ? null : <Navbar />}
+          {agrandarAncho && !menuDesplegado ? null :<Navbar />}
         </Flex>
         <Cv section='header'/>
         <Menuresponsive menuDesplegado={menuDesplegado} onClick={handleMenuClick} />

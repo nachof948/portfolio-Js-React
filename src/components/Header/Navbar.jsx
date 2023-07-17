@@ -57,7 +57,6 @@ const enlaceActivo = {
 
   return (
     <Box as="nav" sx={navEstilo}>
-      
       <Link
         sx={activeLink === 'Inicio' ? enlaceActivo : enlacesNav}
         href="#"
