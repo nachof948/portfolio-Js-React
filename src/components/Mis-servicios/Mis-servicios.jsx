@@ -14,7 +14,7 @@ const Misservicios = () => {
         justifyContent:'center',
         flexDirection:'column',
         alignItems:'center',
-        py:'60px'
+        p:'6rem 0rem 1rem'
     }
     const servicioContenedor ={
         margin:'0 auto',
