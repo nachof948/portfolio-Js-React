@@ -15,7 +15,7 @@ const Navbar = () => {
     gap: separacionEnlaces ? '3.5rem' : '6.5rem',
   };
 
-// Resto del código...
+
 const enlacesNav = {
   position: "relative",
   textDecoration: "none",
@@ -57,6 +57,7 @@ const enlaceActivo = {
 
   return (
     <Box as="nav" sx={navEstilo}>
+      
       <Link
         sx={activeLink === 'Inicio' ? enlaceActivo : enlacesNav}
         href="#"

@@ -25,6 +25,7 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   const header = {
     bg: '#222222',
     width: '100vw',
