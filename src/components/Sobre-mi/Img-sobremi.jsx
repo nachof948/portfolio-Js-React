@@ -1,14 +1,18 @@
 import React from 'react';
 import Imagensobremi from '../../assets/Sobremi-img/Imagen Sobre-Mi.png'
 import { Image } from '@chakra-ui/react';
+
 const Imgsobremi = () => {
-    const Sobremiimagen={
+    const sobreMiImagen={
         borderRadius:'50%',
         bg:'#F26C4F'
     }
     return(
         <>
-            <Image sx={Sobremiimagen} src={Imagensobremi} width={{xl: '25rem', lg:'22rem', sm3:'25rem', sm1:'19rem', sm:'15rem'}} alt="Ignacio Fernandez" />
+            <Image sx={sobreMiImagen} 
+            src={Imagensobremi} 
+            width={{xl: '25rem', lg:'22rem', sm3:'25rem', sm1:'19rem', sm:'15rem'}} 
+            alt="Ignacio Fernandez" />
         </>
     )
 }

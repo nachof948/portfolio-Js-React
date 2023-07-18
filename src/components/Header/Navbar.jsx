@@ -32,35 +32,12 @@ const enlacesNav = {
     },
   },
 };
-
-
-
   return (
     <Box as="nav" sx={navEstilo}>
-      <Link
-        sx={enlacesNav}
-        href="#"
-      >
-        Inicio
-      </Link>
-      <Link
-        sx={ enlacesNav}
-        href="#sobre-mi"
-      >
-        Acerca
-      </Link>
-      <Link
-        sx={ enlacesNav}
-        href="#mis-servicios"
-      >
-        Servicios
-      </Link>
-      <Link
-        sx={ enlacesNav}
-        href="#portfolio"
-      >
-        Portfolio
-      </Link>
+      <Link sx={enlacesNav} href="#">Inicio</Link>
+      <Link sx={ enlacesNav} href="#sobre-mi">Acerca</Link>
+      <Link sx={ enlacesNav} href="#mis-servicios"> Servicios</Link>
+      <Link sx={ enlacesNav} href="#portfolio">Portfolio</Link>
     </Box>
   );
 };

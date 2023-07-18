@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, Button, Flex, useMediaQuery, Link } from '@chakra-ui/react';
+import { Text, Flex, useMediaQuery, Link } from '@chakra-ui/react';
+
 const Titulos = () => {
     const [menorA1023] = useMediaQuery("(max-width: 1023px)");
 const textContenedor ={

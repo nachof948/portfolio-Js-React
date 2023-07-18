@@ -59,7 +59,7 @@ const enlacesMenu = {
             color:'#F26C4F'
         },
     }
-    const handleLinkClick = () => {
+    const manejarLinkClick = () => {
         onClick();
       };
 return (
@@ -67,19 +67,19 @@ return (
     {menuDesplegado && (
         <Box sx={menuResponsive}display={mostrarMenuResponsive ? 'block' : 'none'}>
             <Box sx={enlacesMenu}>
-                <Link sx={enlacesResponsive} onClick={handleLinkClick} href="#" display="block" mb="1rem" fontSize={'1.3rem'}>
+                <Link sx={enlacesResponsive} onClick={manejarLinkClick} href="#" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Inicio
                 </Link>
-                <Link sx={enlacesResponsive} onClick={handleLinkClick} href="#sobre-mi" display="block" mb="1rem" fontSize={'1.3rem'}>
+                <Link sx={enlacesResponsive} onClick={manejarLinkClick} href="#sobre-mi" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Acerca
                 </Link>
-                <Link sx={enlacesResponsive} onClick={handleLinkClick} href="#mis-servicios" display="block" mb="1rem" fontSize={'1.3rem'}>
+                <Link sx={enlacesResponsive} onClick={manejarLinkClick} href="#mis-servicios" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Servicios
                 </Link>
-                <Link sx={enlacesResponsive} onClick={handleLinkClick} href="#portfolio" display="block" mb="1rem" fontSize={'1.3rem'}>
+                <Link sx={enlacesResponsive} onClick={manejarLinkClick} href="#portfolio" display="block" mb="1rem" fontSize={'1.3rem'}>
                     Portfolio
                 </Link>
-                <Link sx={cvBtn} onClick={handleLinkClick}
+                <Link sx={cvBtn} onClick={manejarLinkClick}
                 href="https://drive.google.com/uc?export=download&id=1iiLd_s3x0mEP2FfrhzxO4NFLKlfHysII"
                 download="CV-Ignacio Fernandez.pdf">
                     Descargar CV
