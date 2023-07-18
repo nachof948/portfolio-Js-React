@@ -100,7 +100,7 @@ const Formulario = () => {
                 {...register('email', { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i  })}
                 sx={inputEstilo} 
                 id="email"
-                type="email" 
+                type="text" 
                 name="email"
                 focusBorderColor='white' 
                 placeholder='Tu Correo Electronico'  />
