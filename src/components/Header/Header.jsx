@@ -34,7 +34,7 @@ const Header = () => {
     margin:'0 auto',
     top: 0,
     pt: paddingTop,
-    zIndex: 11,
+    zIndex: 12,
   };
   const headerContenido = {
     bg: '#222222',
