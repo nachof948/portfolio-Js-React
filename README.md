@@ -5,4 +5,4 @@ Imagen del Diseño original:
 [![Primera-parte-del-portfolio.png](https://i.postimg.cc/Qdd3J7Lc/Primera-parte-del-portfolio.png)](https://postimg.cc/vckkQcZm)
 
 Imagen del Trabajo para la Diplomatura:
-[![Dise-o-para-readme.png](https://i.postimg.cc/CMrHKThY/Dise-o-para-readme.png)](https://postimg.cc/py8n0S51)
+[![Dise-o-para-readme.png](https://i.postimg.cc/MT5kBZs9/Dise-o-para-readme.png)](https://postimg.cc/8J7nQGgv)
