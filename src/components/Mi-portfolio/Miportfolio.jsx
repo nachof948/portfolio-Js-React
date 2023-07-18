@@ -34,7 +34,7 @@ const Miportfolio = () => {
     },
   };
 
-  const handleSlideChange = (slideIndex) => {
+  const manejarSlideCambios = (slideIndex) => {
     setCurrentSlide(slideIndex);
   };
 
@@ -123,7 +123,7 @@ const Miportfolio = () => {
           {renderPortfolio()}
         </Flex>
         <Flex justifyContent={'center'} gap={15} >
-          <Slide currentSlide={currentSlide} totalSlides={Math.ceil(slides.length / 4)} onSlideChange={handleSlideChange} />
+          <Slide currentSlide={currentSlide} totalSlides={Math.ceil(slides.length / 4)} slideCambios={manejarSlideCambios} />
         </Flex>
       </Flex>
     </Box>

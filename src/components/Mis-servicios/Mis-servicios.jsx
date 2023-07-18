@@ -1,4 +1,4 @@
-import { Box, Flex,Text, useMediaQuery } from '@chakra-ui/react';
+import { Box, Flex,Text } from '@chakra-ui/react';
 import { CardBlack, Cardbranding} from '../../index'
 import React from 'react';
 import cardUxImage from '../../../src/assets/Misservicios-img/card-ux.svg';

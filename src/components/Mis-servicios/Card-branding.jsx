@@ -1,7 +1,7 @@
 import React from 'react';
 import BrandingCard from '../../assets/Misservicios-img/card-branding.svg'
 import BrandingCardBlanco from '../../assets/Misservicios-img/card-branding-blanco.svg'
-import { Flex, Text,Image, useMediaQuery } from '@chakra-ui/react';
+import { Flex, Text,Image } from '@chakra-ui/react';
 const Cardbranding = () => {
 
     const cardBranding ={

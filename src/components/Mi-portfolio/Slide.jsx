@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 
-const Slide = ({ currentSlide, totalSlides, onSlideChange }) => {
+const Slide = ({ currentSlide, totalSlides, slideCambios }) => {
   const slideEstilo = {
     bg: 'transparent',
     border: '2px solid #F26C4F',
@@ -17,8 +17,8 @@ const Slide = ({ currentSlide, totalSlides, onSlideChange }) => {
     },
   };
 
-  const handleSlideClick = (slideIndex) => {
-    onSlideChange(slideIndex);
+  const manejarSlideClick = (slideIndex) => {
+    slideCambios(slideIndex);
   };
 
   const renderSlides = () => {
@@ -34,8 +34,8 @@ const Slide = ({ currentSlide, totalSlides, onSlideChange }) => {
             bg: currentSlide === i ? '#F26C4F' : 'transparent',
           }}
           opacity={currentSlide === i ? 1 : 0.5}
-          onClick={() => handleSlideClick(i)}
-          onFocus={() => handleSlideClick(i)}
+          onClick={() => manejarSlideClick(i)}
+          onFocus={() => manejarSlideClick(i)}
         ></Box>
       );
     }

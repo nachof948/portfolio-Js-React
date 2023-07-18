@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 const Formulario = () => {
     const {register,formState:{errors}, handleSubmit, reset} = useForm()
     const [enviado, setEnviado] = useState(false);
+    const [noEnviado, setNoEnviado] = useState(false);
     
     const enviar = async (data) => {
     try {
@@ -19,7 +20,7 @@ const Formulario = () => {
         setEnviado(true)
         reset()
     } else {
-        console.error('Error al enviar el correo electrónico');
+        setNoEnviado(true)
     }
     } catch (error) {
     console.error('Error al enviar el correo electrónico:', error);   
@@ -118,6 +119,10 @@ const Formulario = () => {
                 {enviado && 
                 <Text color={'white'} fontWeight={'500'} fontSize={{sm3:'1.1rem', sm:'0.9rem'}} >
                     Tus datos se han enviado correctamente!
+                </Text>}
+                {noEnviado && 
+                <Text color={'black'} fontWeight={'500'} fontSize={{sm3:'1.1rem', sm:'0.9rem'}} >
+                    Tus datos no se han enviado correctamente!
                 </Text>}
             
                 <Button sx={btnFormulario} type='submit'>Enviar</Button>

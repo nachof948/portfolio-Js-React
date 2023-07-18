@@ -48,7 +48,8 @@ const Portfolio = ({imagen, link, titulo}) => {
                     <Image 
                     src={imagen} 
                     sx={imgPortfolio} 
-                    alt="Aplicaciones Web"
+                    loading="lazy"
+                    alt="Portfolio"
                     width={{lg:'39vw', sm:'85vw'}} 
                     height={{xxl:'20rem', xl:'16rem'}} />
                 </Link>
