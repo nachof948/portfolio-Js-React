@@ -55,7 +55,7 @@ const Portfolio = ({imagen, link, titulo}) => {
                 </Link>
                 <Flex sx={sobreImg}
                 width={{lg:'39vw', sm:'85vw'}} 
-                height={{xxl:'20rem', sm:'25rem'}} ></Flex>
+                height={{xxl:'20rem', sm:'28rem'}} ></Flex>
                 <Text as={'h3'} 
                 fontSize= {{xl:'2.5rem',lg:'2rem',md:"2.5rem", sm2:'1.8rem', sm:'1.4rem'}}  
                 sx={textoSobreImg}>{titulo}</Text>
