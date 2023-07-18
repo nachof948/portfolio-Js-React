@@ -3,3 +3,6 @@ Este portfolio fue tomado de un [diseño](https://www.behance.net/gallery/135419
 
 Imagen del Diseño original:
 [![Primera-parte-del-portfolio.png](https://i.postimg.cc/Qdd3J7Lc/Primera-parte-del-portfolio.png)](https://postimg.cc/vckkQcZm)
+
+Imagen del Trabajo para la Diplomatura:
+[![Dise-o-para-readme.png](https://i.postimg.cc/CMrHKThY/Dise-o-para-readme.png)](https://postimg.cc/py8n0S51)
