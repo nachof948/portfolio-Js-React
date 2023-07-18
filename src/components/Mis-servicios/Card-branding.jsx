@@ -35,7 +35,7 @@ const Cardbranding = () => {
     const cardBrandingImg ={
         alignSelf:'center', 
         my:'10px',
-        rotateX:'90deg'
+        transform: 'rotate(270deg)'
     }
     const cardTituloBranding ={
         fontWeight:'600',
