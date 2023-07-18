@@ -30,7 +30,7 @@ const btnHero ={
     return(
         <Flex sx={textContenedor} textAlign={{xxl:'start', xl:'start',lg:'start', sm:'center'}}>
             <Text as="h1" sx={tituloHeader} 
-            fontSize={{xxl:'4.45rem', xl:'3.5rem',lg:'2.7rem', md:'3.2rem', sm3: '2.8rem',sm2:'2.15rem', sm:'1.9rem'}} 
+            fontSize={{xxl:'4.45rem', xl:'3.5rem',lg:'2.7rem', md:'3.2rem', sm3: '2.8rem',sm2:'2.15rem', sm:'1.7rem'}} 
             width={{lg:'100%',md:'80%'}}
             lineHeight={{xl:'80px', lg:'60px',md:'65px',sm:'50px'}}>
                 Hola, {menorA1023 ? ' ' :  <br />} Soy{' '}

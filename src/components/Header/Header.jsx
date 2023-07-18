@@ -47,7 +47,7 @@ const Header = () => {
 
   return (
     <Box as="header" sx={header}>
-      <Flex sx={headerContenido} width={{ lg: '80vw', sm: '90vw' }}>
+      <Flex sx={headerContenido} width={{ lg: '81vw', sm: '93.5vw' }}>
         <Flex sx={headerNav} gap={{ xl: '5.9rem', lg: '3.5rem' }}>
           <Logo />
           {agrandarAncho && !menuDesplegado ? null :<Navbar />}
