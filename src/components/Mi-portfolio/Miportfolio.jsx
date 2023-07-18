@@ -111,6 +111,7 @@ const Miportfolio = () => {
         imagen={slide.image}
         link={slide.link}
         titulo={slide.title}
+        prefetch
       />
     ));
   };
