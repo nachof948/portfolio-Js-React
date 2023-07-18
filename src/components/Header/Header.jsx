@@ -28,9 +28,10 @@ const Header = () => {
   const header = {
     bg: '#222222',
     width: '100vw',
-    display: 'flex',
-    justifyContent: 'center',
     position: 'fixed',
+    display:'flex',
+    justifyContent:'center',
+    margin:'0 auto',
     top: 0,
     pt: paddingTop,
     zIndex: 11,
@@ -48,7 +49,7 @@ const Header = () => {
   return (
     <Box as="header" sx={header}>
       <Flex sx={headerContenido} width={{ lg: '81vw', sm: '93.5vw' }}>
-        <Flex sx={headerNav} gap={{ xl: '5.9rem', lg: '3.5rem' }}>
+        <Flex sx={headerNav} gap={{ xl: '5.9rem', lg: '3.5rem' }} >
           <Logo />
           {agrandarAncho && !menuDesplegado ? null :<Navbar />}
         </Flex>

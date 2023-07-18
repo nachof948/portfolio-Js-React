@@ -8,6 +8,7 @@ const Cv = ({ section }) => {
   const cvBtn = {
     color: '#FFFFFF',
     bg: '#F26C4F',
+    marginRight:'0.75rem',
     border: '1px solid #F26C4F',
     borderRadius: '5px',
     fontWeight: '400',
