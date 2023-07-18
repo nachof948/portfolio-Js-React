@@ -42,8 +42,8 @@ const CardBlack = ({imagen, imagenHover,servicio, explicacion}) => {
         textAlign={{lg:'start', sm:'center'}}>
             <Image id='cardImagen' src={imagen} alt="UX-UI" width={{md:'8rem', sm:'7rem'}} alignSelf={'center'} mb={'15px'}/>
             <Image id='cardImagenHover' src={imagenHover} alt="UX-UI" width={{md:'8rem', sm:'7rem'}} alignSelf={'center'} mb={'15px'}/>
-            <Text as={'h3'} sx={cardTitulo} fontSize={{xxl:'1.8rem', lg:'1.5rem', sm2:'1.8rem', sm:'1.5rem'}}>{servicio}</Text>
-            <Text id='cardTextoBlanco' sx={cardTexto}  fontSize={{sm3:'1.1rem'}}>{explicacion}</Text>
+            <Text as={'h3'} sx={cardTitulo} fontSize={{xxl:'1.8rem', lg1:'1.5rem', lg:'1.2rem', sm2:'1.8rem', sm:'1.5rem'}}>{servicio}</Text>
+            <Text id='cardTextoBlanco' sx={cardTexto}  fontSize={{lg1:'1.1rem', md:'1rem',sm3:'1.1rem'}}>{explicacion}</Text>
         </Flex>
     )
 }

@@ -50,8 +50,8 @@ const Cardbranding = () => {
         textAlign={{lg:'start', sm:'center'}}>
             <Image sx={cardBrandingImg} id='cardImagen'width={{md:'7.2rem', sm:'6rem'}} src={BrandingCardBlanco} alt="UX-UI" />
             <Image sx={cardBrandingImg}  id='cardImagenHover' width={{md:'7.2rem', sm:'6rem'}} src={BrandingCard} alt="UX-UI" />
-            <Text as={'h3'} sx={cardTituloBranding} fontSize={{xxl:'1.8rem', lg:'1.5rem', sm2:'1.8rem', sm:'1.5rem'}}>Diseño de Marca</Text>
-            <Text id='cardTexto' sx={cardTextoBranding}  fontSize={{ sm3:'1.1rem'}}>Se busca comunicar los valores, la personalidad y la propuesta única de una marca a través de elementos visuales como el logotipo, los colores, las tipografías, los patrones y otros elementos gráficos.</Text>
+            <Text as={'h3'} sx={cardTituloBranding} fontSize={{xxl:'1.8rem', lg1:'1.5rem', lg:'1.2rem', sm2:'1.8rem', sm:'1.5rem'}}>Diseño de Marca</Text>
+            <Text id='cardTexto' sx={cardTextoBranding}  fontSize={{lg1:'1.1rem', md:'1rem',sm:'1.1rem'}}>Se busca comunicar los valores, la personalidad y la propuesta única de una marca a través de elementos visuales como el logotipo, los colores, las tipografías, los patrones y otros elementos gráficos.</Text>
         </Flex>
     )
 }
