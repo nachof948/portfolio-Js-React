@@ -33,7 +33,7 @@ const Header = () => {
     position: 'fixed',
     top: 0,
     pt: paddingTop,
-    zIndex: 9,
+    zIndex: 11,
   };
   const headerContenido = {
     bg: '#222222',
