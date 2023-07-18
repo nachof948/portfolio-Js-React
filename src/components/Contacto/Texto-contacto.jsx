@@ -25,7 +25,7 @@ const TextoContacto = () => {
                     <Text as={'h2'} 
                     color={'white'} 
                     fontWeight={700} 
-                    fontSize={{xxl:'2.6rem',xl1:'2.4rem', lg:'1.8rem', sm3:'2.5rem', sm1:'1.4rem', sm:'1.4rem'}} 
+                    fontSize={{xxl:'2.6rem',xl1:'2.4rem',lg1:'2.2rem', lg:'1.8rem', sm3:'2.5rem', sm1:'1.4rem', sm:'1.4rem'}} 
                     width={'95%'} 
                     lineHeight={{lg:'48px', md:'45px',sm3:'40px', sm:'30px'}}
                     textAlign={{lg:'start', sm:'center'}}>
