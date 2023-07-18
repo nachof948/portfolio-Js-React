@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/react';
 import { Hero, Sobremi, Misservicios, Miportfolio, Contacto } from '../../index'
 const Main = () => {
     return(
-        <Box as={'main'} margin={'0 auto'}>
+        <Box as={'main'} margin={'0 auto'} display={'flex'} flexDirection={'column'} alignItems={'center'}>
             <Hero /> 
             <Sobremi /> 
             <Misservicios />
