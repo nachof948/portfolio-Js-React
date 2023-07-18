@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Box, Link, useMediaQuery } from '@chakra-ui/react';
 
 const Navbar = () => {
   const [separacionEnlaces] = useMediaQuery("(max-width: 1280px)");
   const [ocultarNav] = useMediaQuery("(max-width: 1023px)");
-  const [activeLink, setActiveLink] = useState(null);
 
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-  };
 
   const navEstilo = {
     display: 'flex',
@@ -37,51 +33,31 @@ const enlacesNav = {
   },
 };
 
-const enlaceActivo = {
-  position: "relative",
-  textDecoration: "none",
-  display: ocultarNav ? 'none' : 'flex',
-  "&::before": {
-    content: '""',
-    position: "absolute",
-    bottom: 0,
-    left: "0",
-    width: "50%",
-    height: "3px",
-    backgroundColor: "#F26C4F",
-    transition: "width 250ms"
-  },
-  _hover: {}, 
-};
 
 
   return (
     <Box as="nav" sx={navEstilo}>
       <Link
-        sx={activeLink === 'Inicio' ? enlaceActivo : enlacesNav}
+        sx={enlacesNav}
         href="#"
-        onClick={() => handleLinkClick('Inicio')}
       >
         Inicio
       </Link>
       <Link
-        sx={activeLink === 'Acerca' ? enlaceActivo : enlacesNav}
+        sx={ enlacesNav}
         href="#sobre-mi"
-        onClick={() => handleLinkClick('Acerca')}
       >
         Acerca
       </Link>
       <Link
-        sx={activeLink === 'Servicios' ? enlaceActivo : enlacesNav}
+        sx={ enlacesNav}
         href="#mis-servicios"
-        onClick={() => handleLinkClick('Servicios')}
       >
         Servicios
       </Link>
       <Link
-        sx={activeLink === 'Portfolio' ? enlaceActivo : enlacesNav}
+        sx={ enlacesNav}
         href="#portfolio"
-        onClick={() => handleLinkClick('Portfolio')}
       >
         Portfolio
       </Link>

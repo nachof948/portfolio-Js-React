@@ -7,7 +7,7 @@ const Formulario = () => {
     
     const enviar = async (data) => {
     try {
-        const response = await fetch('https://formspree.io/f/xpzgzeoe', {
+        const response = await fetch('https://formspree.io/f/xgejvopq', {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ const Formulario = () => {
     return(
         <>
 
-            <FormControl as={'form'} action="https://formspree.io/f/xpzgzeoe" method="POST" sx={formularioEstilo} onSubmit={handleSubmit(enviar)}
+            <FormControl as={'form'} action="https://formspree.io/f/xgejvopq" method="POST" sx={formularioEstilo} onSubmit={handleSubmit(enviar)}
         order={{lg:'2', sm:'1'}} 
         flexBasis={{xl1:'90%', lg:'80%',md:'80%', sm:'90%'}} 
         p={{xl: '2rem 2.4rem', lg:'1.4rem 1rem', sm:'1.4rem 1rem'}}>

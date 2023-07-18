@@ -2,7 +2,7 @@ import React from 'react';
 import imagenLogo from '../../assets/Header-img/Logo.png'
 import { Image,Link } from '@chakra-ui/react';
 
-const Logo = ({ setActiveLink }) => {
+const Logo = () => {
     
     return(
         <>
