@@ -25,8 +25,8 @@ const TextoContacto = () => {
                     <Text as={'h2'} 
                     color={'white'} 
                     fontWeight={700} 
-                    fontSize={{xxl:'2.6rem',xl1:'2.4rem',lg1:'2.2rem', lg:'1.8rem', sm3:'2.5rem', sm1:'1.4rem', sm:'1.4rem'}} 
-                    width={'95%'} 
+                    fontSize={{xxl:'2.6rem',xl1:'2.4rem',lg1:'2.2rem', lg:'1.8rem', sm3:'2.5rem', sm1:'1.4rem', sm:'1.2rem'}} 
+                    width={{sm1:'95%', sm:'90%'}} 
                     lineHeight={{lg:'48px', md:'45px',sm3:'40px', sm:'30px'}}
                     textAlign={{lg:'start', sm:'center'}}>
                         Hagamos algo realmente <span style={{color:'#262626'}}>fenomenal</span>.
@@ -42,10 +42,10 @@ const TextoContacto = () => {
                         </Flex>
                         <Flex alignItems={'center'} gap={4}>
                         <FontAwesomeIcon icon={faGlobe} fontSize={{sm2:'1.5rem', sm:'1.2rem'}}  color="white" />
-                            <Link fontSize={{md:'1.1rem',sm2:'1rem',sm:'0.8rem'}} color={'white'}  href="https://ignaciofernadezdeveloper.netlify.app/">https://ignaciofernadezdeveloper.netlify.app/</Link>
+                            <Link fontSize={{md:'1.1rem',sm2:'1rem',sm:'0.6rem'}} color={'white'}  href="https://ignaciofernadezdeveloper.netlify.app/">https://ignaciofernadezdeveloper.netlify.app/</Link>
                         </Flex>
                     </Flex>
-                    <Flex gap={'1.8rem'}>
+                    <Flex gap={{sm1:'1.8rem', sm:'1rem'}}>
                         <Link sx={redesContacto} href="https://www.facebook.com/nacho.fernandez.737/" target='_blank'><i className="bi bi-facebook"></i></Link>
                         <Link sx={redesContacto} href="https://www.instagram.com/nachofernandezmusica/" target='_blank'><i className="bi bi-instagram"></i></Link>
                         <Link sx={redesContacto} href="https://www.behance.net/nachofernandez7" target='_blank'><i className="bi bi-behance"></i></Link>

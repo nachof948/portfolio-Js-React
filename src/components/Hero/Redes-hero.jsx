@@ -14,7 +14,7 @@ const Redeshero = () => {
         },
     }
     return(
-        <Flex direction={{lg:'column', sm:'row'}} gap={'2rem'}>
+        <Flex direction={{lg:'column', sm:'row'}} gap={{sm1:'2rem',sm:'1.5rem'}}>
             <Box sx={contactosHero}>
                 <Link href="https://www.instagram.com/nachofernandezmusica/" target='_blank'><i className="bi bi-instagram"></i></Link>
             </Box>
