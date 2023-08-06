@@ -41,7 +41,7 @@ const Miportfolio = () => {
   const slides = [
     {
       image: portfolioImg1,
-      link: 'https://nachof948.github.io/Trabajo-Practico-1/',
+      link: 'https://nachof948.github.io/calculadora/',
       title: 'Aplicaciones Web',
     },
     {
