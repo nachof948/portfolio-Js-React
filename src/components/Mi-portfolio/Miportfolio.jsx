@@ -42,12 +42,12 @@ const Miportfolio = () => {
     {
       image: portfolioImg1,
       link: 'https://nachof948.github.io/calculadora/',
-      title: 'Aplicaciones Web',
+      title: 'Calculadora',
     },
     {
       image: portfolioImg2,
-      link: 'https://nachof948.github.io/Trabajo-Practico-2/',
-      title: 'Diseño UX/UI',
+      link: 'https://nachof948.github.io/Tic-tac-toe/',
+      title: 'Tic tac toe',
     },
     {
       image: portfolioImg3,
