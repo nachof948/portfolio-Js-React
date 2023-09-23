@@ -51,8 +51,8 @@ const Miportfolio = () => {
     },
     {
       image: portfolioImg3,
-      link: 'https://nachof948.github.io/Huddle-landing-page-with-a-single-introductory-section/',
-      title: 'Diseño de Marca',
+      link: 'https://nachof948.github.io/buscador-de-peliculas/',
+      title: 'Buscador de Peliculas',
     },
     {
       image: portfolioImg4,
