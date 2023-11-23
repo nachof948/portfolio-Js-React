@@ -56,8 +56,8 @@ const Miportfolio = () => {
     },
     {
       image: portfolioImg4,
-      link: 'https://nachof948.github.io/Trabajo-Practico-3/',
-      title: 'Desarrollo Web',
+      link: 'https://foodied-restaurante.onrender.com/',
+      title: 'E-commerce',
     },
     {
       image: portfolioImg5,
