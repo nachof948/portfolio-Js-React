@@ -58,8 +58,8 @@ const Miportfolio = () => {
       image: portfolioImg4,
       link: 'https://foodied-restaurante.onrender.com/',
       title: 'E-commerce',
-    },
-    {
+    }
+/*     {
       image: portfolioImg5,
       link: 'https://nachof948.github.io/huddle-html-css/',
       title: 'Aplicaciones Web',
@@ -98,7 +98,7 @@ const Miportfolio = () => {
       image: portfolioImg12,
       link: 'https://nachof948.github.io/testimonials-grid-section-main/',
       title: 'Desarrollo Web',
-    }
+    } */
   ];
 
   const renderPortfolio = () => {
@@ -123,9 +123,9 @@ const Miportfolio = () => {
         <Flex justifyContent={'center'} alignItems={'center'} gap={'1rem'} flexWrap={'wrap'} >
           {renderPortfolio()}
         </Flex>
-        <Flex justifyContent={'center'} gap={15} >
+{/*         <Flex justifyContent={'center'} gap={15} >
           <Slide currentSlide={currentSlide} totalSlides={Math.ceil(slides.length / 4)} slideCambios={manejarSlideCambios} />
-        </Flex>
+        </Flex> */}
       </Flex>
     </Box>
   );
