@@ -25,7 +25,7 @@ const Cv = ({ section }) => {
     <>
       <Link
         sx={cvBtn}
-        href="https://drive.google.com/uc?export=download&id=1iiLd_s3x0mEP2FfrhzxO4NFLKlfHysII"
+        href="https://drive.google.com/uc?export=download&id=1tvzt7vChl3FnGhpImOqBluvM3VHEMXpP"
         download="CV-Ignacio Fernandez.pdf"
       >
         Descargar CV
