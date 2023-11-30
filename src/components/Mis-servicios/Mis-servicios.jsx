@@ -48,7 +48,7 @@ const Misservicios = () => {
                         imagen={cardUxImage} 
                         imagenHover={cardUxHoverImage}
                         servicio={'Aplicaciones Web'}
-                        explicacion={'Mi enfoque se centra en crear aplicaciones web completas utilizando Node.js, Express y MongoDB, junto con HTML, CSS, JavaScript y React. Me especializo en convertir diseños en interfaces dinámicas y efectivas, asegurando que las aplicaciones ofrezcan experiencias de usuario atractivas y funcionales.'}/>
+                        explicacion={'Mi enfoque se centra en crear aplicaciones web completas utilizando Node.js, Express y MongoDB, junto con HTML, CSS, JavaScript y React. Me aseguro que las aplicaciones ofrezcan experiencias de usuario atractivas y funcionales.'}/>
                         <Cardbranding/>
                         <CardBlack 
                         imagen={cardWebImage} 
