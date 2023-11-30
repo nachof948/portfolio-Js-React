@@ -47,8 +47,8 @@ const Misservicios = () => {
                         <CardBlack 
                         imagen={cardUxImage} 
                         imagenHover={cardUxHoverImage}
-                        servicio={'Diseño UX/UI'}
-                        explicacion={'Me centro en crear experiencias digitales atractivas y funcionales para los usuarios. A través de la investigación de usuarios y el análisis de sus necesidades, diseño interfaces intuitivas que facilitan la interacción.'}/>
+                        servicio={'Aplicaciones Web'}
+                        explicacion={'Mi enfoque se centra en crear aplicaciones web completas utilizando Node.js, Express y MongoDB, junto con HTML, CSS, JavaScript y React. Me especializo en convertir diseños en interfaces dinámicas y efectivas, asegurando que las aplicaciones ofrezcan experiencias de usuario atractivas y funcionales.'}/>
                         <Cardbranding/>
                         <CardBlack 
                         imagen={cardWebImage} 
