@@ -45,7 +45,7 @@ const btnHero ={
             </Text>
             <Text letterSpacing={{md:'5px', sm:'2px' }}
                 fontSize={{xxl:'1.1rem', xl:'0.9rem',lg:'0.7rem',md:'0.8rem',sm2:'0.7rem', sm:'0.5rem'}}>
-                Desarrollador Front End | Profesor | Músico</Text>
+                Desarrollador Full Stack</Text>
             <Link href="#contacto" sx={btnHero}>Contactame!</Link>
         </Flex>
     )
