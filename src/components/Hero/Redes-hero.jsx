@@ -19,7 +19,7 @@ const Redeshero = () => {
                 <Link href="https://www.instagram.com/nachofernandezmusica/" target='_blank'><i className="bi bi-instagram"></i></Link>
             </Box>
             <Box sx={contactosHero}>
-                <Link href="https://www.behance.net/nachofernandez7" target='_blank'><i className="bi bi-behance"></i></Link>
+                <Link href="https://www.linkedin.com/in/ignacio-fernandez-45666b1a7/" target='_blank'><i className="bi bi-linkedin"></i></Link>
             </Box>
             <Box sx={contactosHero}>
                 <Link href="https://www.facebook.com/nacho.fernandez.737/" target='_blank'><i className="bi bi-facebook"></i></Link>
