@@ -3,7 +3,7 @@ import { Box, Image,Text, Flex,Link} from '@chakra-ui/react';
 
 
 
-const Portfolio = ({imagen, link, titulo}) => {
+const Portfolio = ({imagen, link, titulo,descripcion}) => {
     const imgPortfolio ={
         borderRadius:10
     }
@@ -22,6 +22,18 @@ const Portfolio = ({imagen, link, titulo}) => {
         width:'100%',
         textAlign:'center',
         top:"50%",
+        left:"50%",
+        transform:"translate(-50%, -50%)",
+        fontWeight:700,
+        letterSpacing:'2px',
+        transition:'all 300ms'
+    }
+    const descripcionSobreImg ={
+        color:'white',
+        position:'absolute',
+        width:'100%',
+        textAlign:'center',
+        top:"75%",
         left:"50%",
         transform:"translate(-50%, -50%)",
         fontWeight:700,
@@ -59,6 +71,9 @@ const Portfolio = ({imagen, link, titulo}) => {
                 <Text as={'h3'} 
                 fontSize= {{xl:'2.5rem',lg:'2rem',md:"2.5rem", sm2:'1.8rem', sm:'1.4rem'}}  
                 sx={textoSobreImg}>{titulo}</Text>
+                <Text as={'h3'} 
+                fontSize= {{xl:'2rem',lg:'1.5rem',md:"2rem", sm2:'1.4rem', sm:'0.8rem'}}  
+                sx={descripcionSobreImg}>{descripcion}</Text>
             </Box>
             
         </>

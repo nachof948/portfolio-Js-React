@@ -43,21 +43,25 @@ const Miportfolio = () => {
       image: portfolioImg1,
       link: 'https://nachof948.github.io/calculadora/',
       title: 'Calculadora',
+      descripcion:'(HTML-CSS-Javascript-React)'
     },
     {
       image: portfolioImg2,
       link: 'https://nachof948.github.io/Tic-tac-toe/',
       title: 'Tic tac toe',
+      descripcion:'(HTML-CSS-Javascript-React)'
     },
     {
       image: portfolioImg3,
       link: 'https://nachof948.github.io/buscador-de-peliculas/',
       title: 'Buscador de Peliculas',
+      descripcion:'(HTML-CSS-Javascript-React)'
     },
     {
       image: portfolioImg4,
       link: 'https://foodied-restaurante.vercel.app/',
       title: 'E-commerce',
+      descripcion:'(React-Express-Node.js-Mongo DB)'
     }
 /*     {
       image: portfolioImg5,
@@ -111,6 +115,7 @@ const Miportfolio = () => {
         imagen={slide.image}
         link={slide.link}
         titulo={slide.title}
+        descripcion={slide.descripcion}
         prefetch
       />
     ));
