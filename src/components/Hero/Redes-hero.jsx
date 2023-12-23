@@ -16,7 +16,7 @@ const Redeshero = () => {
     return(
         <Flex direction={{lg:'column', sm:'row'}} gap={{sm1:'2rem',sm:'1.5rem'}}>
             <Box sx={contactosHero}>
-                <Link href="https://www.instagram.com/nachofernandezmusica/" target='_blank'><i className="bi bi-instagram"></i></Link>
+                <Link href="https://www.instagram.com/nachofernandezdev/" target='_blank'><i className="bi bi-instagram"></i></Link>
             </Box>
             <Box sx={contactosHero}>
                 <Link href="https://www.linkedin.com/in/ignacio-fernandez-45666b1a7/" target='_blank'><i className="bi bi-linkedin"></i></Link>

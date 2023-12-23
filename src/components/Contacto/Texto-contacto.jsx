@@ -47,7 +47,7 @@ const TextoContacto = () => {
                     </Flex>
                     <Flex gap={{sm1:'1.8rem', sm:'1rem'}}>
                         <Link sx={redesContacto} href="https://www.facebook.com/nacho.fernandez.737/" target='_blank'><i className="bi bi-facebook"></i></Link>
-                        <Link sx={redesContacto} href="https://www.instagram.com/nachofernandezmusica/" target='_blank'><i className="bi bi-instagram"></i></Link>
+                        <Link sx={redesContacto} href="https://www.instagram.com/nachofernandezdev/" target='_blank'><i className="bi bi-instagram"></i></Link>
                         <Link sx={redesContacto} href="https://www.linkedin.com/in/ignacio-fernandez-45666b1a7/" target='_blank'><i className="bi bi-linkedin"></i></Link>
                         <Link sx={redesContacto} href="https://github.com/nachof948" target='_blank'><i className="bi bi-github"></i></Link>
                     </Flex> 
