@@ -62,12 +62,13 @@ const Miportfolio = () => {
       link: 'https://foodied-restaurante.vercel.app/',
       title: 'E-commerce',
       descripcion:'(React-Express-Node.js-Mongo DB)'
-    }
-/*     {
-      image: portfolioImg5,
-      link: 'https://nachof948.github.io/huddle-html-css/',
-      title: 'Aplicaciones Web',
     },
+    {
+      image: portfolioImg5,
+      link: 'https://pronostico-ya.vercel.app/',
+      title: 'Aplicaciones del clima',
+      descripcion:'(HTML-CSS-Javascript-React)'
+    }/* ,
     {
       image: portfolioImg6,
       link: 'https://nachof948.github.io/Proyecto-N2/',
@@ -128,9 +129,9 @@ const Miportfolio = () => {
         <Flex justifyContent={'center'} alignItems={'center'} gap={'1rem'} flexWrap={'wrap'} >
           {renderPortfolio()}
         </Flex>
-{/*         <Flex justifyContent={'center'} gap={15} >
+        <Flex justifyContent={'center'} gap={15} >
           <Slide currentSlide={currentSlide} totalSlides={Math.ceil(slides.length / 4)} slideCambios={manejarSlideCambios} />
-        </Flex> */}
+        </Flex>
       </Flex>
     </Box>
   );
