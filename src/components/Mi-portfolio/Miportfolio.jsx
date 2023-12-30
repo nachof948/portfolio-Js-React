@@ -49,7 +49,7 @@ const Miportfolio = () => {
       image: portfolioImg5,
       link: 'https://pronostico-ya.vercel.app/',
       title: 'Aplicaciones del clima',
-      descripcion:'(HTML-CSS-Javascript-React)'
+      descripcion:'(React-Express-Node.js-Mongo DB)'
     },
     {
       image: portfolioImg2,
