@@ -40,9 +40,15 @@ const Miportfolio = () => {
 
   const slides = [
     {
-      image: portfolioImg1,
-      link: 'https://nachof948.github.io/calculadora/',
-      title: 'Calculadora',
+      image: portfolioImg4,
+      link: 'https://foodied-restaurante.vercel.app/',
+      title: 'E-commerce',
+      descripcion:'(React-Express-Node.js-Mongo DB)'
+    },
+    {
+      image: portfolioImg5,
+      link: 'https://pronostico-ya.vercel.app/',
+      title: 'Aplicaciones del clima',
       descripcion:'(HTML-CSS-Javascript-React)'
     },
     {
@@ -56,19 +62,13 @@ const Miportfolio = () => {
       link: 'https://nachof948.github.io/buscador-de-peliculas/',
       title: 'Buscador de Peliculas',
       descripcion:'(HTML-CSS-Javascript-React)'
-    },
-    {
-      image: portfolioImg4,
-      link: 'https://foodied-restaurante.vercel.app/',
-      title: 'E-commerce',
-      descripcion:'(React-Express-Node.js-Mongo DB)'
-    },
-    {
-      image: portfolioImg5,
-      link: 'https://pronostico-ya.vercel.app/',
-      title: 'Aplicaciones del clima',
+    }
+    /* {
+      image: portfolioImg1,
+      link: 'https://nachof948.github.io/calculadora/',
+      title: 'Calculadora',
       descripcion:'(HTML-CSS-Javascript-React)'
-    }/* ,
+    }, *//* ,
     {
       image: portfolioImg6,
       link: 'https://nachof948.github.io/Proyecto-N2/',
@@ -130,8 +130,8 @@ const Miportfolio = () => {
           {renderPortfolio()}
         </Flex>
         <Flex justifyContent={'center'} gap={15} >
-          <Slide currentSlide={currentSlide} totalSlides={Math.ceil(slides.length / 4)} slideCambios={manejarSlideCambios} />
-        </Flex>
+{/*           <Slide currentSlide={currentSlide} totalSlides={Math.ceil(slides.length / 4)} slideCambios={manejarSlideCambios} />
+ */}        </Flex>
       </Flex>
     </Box>
   );
