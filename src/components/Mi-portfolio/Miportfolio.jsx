@@ -48,7 +48,7 @@ const Miportfolio = () => {
     {
       image: portfolioImg5,
       link: 'https://pronostico-ya.vercel.app/',
-      title: 'Aplicaciones del clima',
+      title: 'Aplicación del clima',
       descripcion:'(React-Express-Node.js-Mongo DB)'
     },
     {
